@@ -482,7 +482,19 @@
                 // Find the corresponding controls and disable auto-rotate
                 // This would be implemented with a more sophisticated control system
             });
-        });
+        }
+                                                          
+                                                          );
+
+ const loader = new THREE.GLTFLoader();
+loader.load(
+'models/hornet.glb',
+function(gltf) {
+scene.add(gltf.scene);
+}
+);
+
+        
     </script>
 </body>
 </html>
